@@ -21,7 +21,7 @@
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 10px;
 
-    > .kpi-card {
+    >.kpi-card {
       display: none;
     }
   }
@@ -63,13 +63,11 @@
           border-radius: var(--dashboard-radius);
           overflow: hidden;
           border: 1px solid rgba(214, 228, 238, 1);
-          background: linear-gradient(
-            180deg,
-            rgba(165, 208, 234, 1) 0%,
-            rgba(220, 233, 241, 1) 50%,
-            rgba(128, 185, 93, 1) 50.2%,
-            rgba(117, 167, 79, 1) 100%
-          );
+          background: linear-gradient(180deg,
+              rgba(165, 208, 234, 1) 0%,
+              rgba(220, 233, 241, 1) 50%,
+              rgba(128, 185, 93, 1) 50.2%,
+              rgba(117, 167, 79, 1) 100%);
         }
       }
 
@@ -459,6 +457,8 @@
 
       &_Title {
         font-size: 15.2px;
+        font-weight: var(--font-weight-semibold);
+        color: var(--text-primary);
       }
     }
   }
@@ -586,6 +586,12 @@
   overflow: hidden;
 
   &_Header {
+    &_Title {
+      font-size: 15.2px;
+      font-weight: var(--font-weight-semibold);
+      color: var(--text-primary);
+    }
+
     &_Subtitle {
       font-size: var(--font-size-xs);
       color: var(--text-secondary);
