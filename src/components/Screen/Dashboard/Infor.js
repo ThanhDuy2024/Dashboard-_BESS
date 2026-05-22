@@ -17,15 +17,15 @@ const Infor = () => {
             <div className="DAT_Infor_Card_SOC_Body_Header_Title">
               {lang.formatMessage({ id: "dashboard_kpi_battery_status" })}
             </div>
-            <div className="DAT_Infor_Card_SOC_Body_Header_Status">
+          </div>
+          <div className="DAT_Infor_Card_SOC_Body_Value">
+            <div className="DAT_Infor_Card_SOC_Body_Value_Val">{sys.soc}%</div>
+            <div className="DAT_Infor_Card_SOC_Body_Value_Status">
               <StatusBadge
                 status={sys.batteryPower < 0 ? "Charging" : "Discharging"}
                 size="small"
               />
             </div>
-          </div>
-          <div className="DAT_Infor_Card_SOC_Body_Value">
-            <div className="DAT_Infor_Card_SOC_Body_Value_Val">{sys.soc}%</div>
           </div>
           <div className="DAT_Infor_Card_SOC_Body_Progress">
             <div className="DAT_Infor_Card_SOC_Body_Progress_Bar">
