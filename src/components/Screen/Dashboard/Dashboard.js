@@ -1,4 +1,3 @@
-import React from "react";
 import Circle from "./Circle";
 import EconomicBenefitCard from "./Economic";
 import Flow from "./Flow";
@@ -8,7 +7,7 @@ import PowerTrendChart from "./LineChart";
 import WeatherWidget from "./Weather";
 import "./Dashboard.scss";
 
-export default function DashboardPage() {
+const DashboardPage = () => {
   return (
     <div className="DAT_Dashboard_Page">
       <section className="DAT_Dashboard_Page_Section">
@@ -47,3 +46,5 @@ export default function DashboardPage() {
     </div>
   );
 }
+
+export default DashboardPage;
